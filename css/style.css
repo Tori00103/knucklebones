@@ -48,18 +48,13 @@ p{
     align-content: center;
 }
 .divider{
-   
     height: 9.5vh;
 }
 .row{
     display: grid;
 }
-.holder{
-    background-image: url(../resources/img/holder.png);
-    background-position: center;
-    background-size: contain;
-    text-align: center;
-    color: aliceblue;
+.holderCanvas{
+    background: transparent;
     margin: 0.5vh;
     width: 10vh;
     height: 9.5vh;

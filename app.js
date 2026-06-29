@@ -38,7 +38,7 @@ randomizerP2.addEventListener('click', () => {
 
 function setupField(fieldRows, enemyRows, player) {
   fieldRows.forEach((row, rowIndex) => {
-    const holders = row.querySelectorAll('.holder');
+    const holders = row.querySelectorAll('.holderCanvas');;
 
     holders.forEach(holder => {
       holder.addEventListener('click', () => {
@@ -65,7 +65,7 @@ function setupField(fieldRows, enemyRows, player) {
 
 
 function removeEnemyValues(enemyRow, value) {
-  const holders = enemyRow.querySelectorAll('.holder');
+  const holders = enemyRow.querySelectorAll('.holderCanvas');
 
   holders.forEach(h => {
     if (Number(h.textContent) === value) {
@@ -106,7 +106,7 @@ function updateRows(fieldRows, scoreDisplay) {
   let total = 0;
 
   fieldRows.forEach(row => {
-    const holders = row.querySelectorAll('.holder');
+    const holders = row.querySelectorAll('.holderCanvas');
 
     const values = Array.from(holders).map(h => Number(h.textContent));
 
