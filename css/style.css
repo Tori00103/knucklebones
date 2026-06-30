@@ -40,8 +40,7 @@ p{
 /*ігрове поле*/
 .game_zone{
     display: flex;
-    
-    width: auto;
+    gap:20px;
 }
 .player_field{
     display: flex;
@@ -54,11 +53,10 @@ p{
     display: grid;
 }
 .holderCanvas{
-    background: transparent;
-    margin: 0.5vh;
+    margin: 0.3vh;
     width: 10vh;
-    height: 9.5vh;
-
+    height: 9.7vh;
+    flex-shrink: 0;
 }
 .row_sum{
     text-align: center;

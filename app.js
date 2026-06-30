@@ -1,3 +1,10 @@
+import { playAnimationOnce, initCanvas } from "./animations/holderAnimationController.js";
+
+const canvases = document.querySelectorAll(".holderCanvas");
+
+initCanvas(canvases);
+
+
 const randomizerP1 = document.querySelector('.player_1 .randomizer');
 const randomizerP2 = document.querySelector('.player_2 .randomizer');
 
@@ -49,6 +56,7 @@ function setupField(fieldRows, enemyRows, player) {
 
         
         holder.textContent = currentRoll;
+        playAnimationOnce(holder);
 
         
         removeEnemyValues(enemyRows[rowIndex], currentRoll);
