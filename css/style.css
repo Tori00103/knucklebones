@@ -4,13 +4,14 @@
 }
 /*ігрова зона*/
 body{
-    background-color: #1E1E2A;
+    background-color: #a19a9a;
     background-image: url(../resources/img/bg.jpg);
+    background-blend-mode:multiply;
     background-repeat: no-repeat;
-    background-size: 35%;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family: 'magical-playful';
+    font-family:'magical-playful';
 }
 
 p{
