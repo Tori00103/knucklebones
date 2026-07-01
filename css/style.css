@@ -4,12 +4,10 @@
 }
 /*ігрова зона*/
 body{
-    background-color: #000000;
-    background-image:
-        radial-gradient(circle, transparent 45%, rgba(0,0,0,0.9) 80%),
-        url(../resources/img/bg.jpg);
+    background-color: #1E1E2A;
+    background-image: url(../resources/img/bg.jpg);
     background-repeat: no-repeat;
-    background-size: 55%;
+    background-size: 35%;
     background-position: center;
     background-attachment: fixed;
     font-family: raven ;
