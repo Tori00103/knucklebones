@@ -1,5 +1,5 @@
 import { playAnimationOnce, initCanvas } from "./animations/holderAnimationController.js";
-
+import { drawDice1, drawDice2 } from "./animations/diceAnimationController.js";
 const canvases = document.querySelectorAll(".holderCanvas");
 
 initCanvas(canvases);
@@ -23,12 +23,10 @@ function rollDice() {
   currentRoll = Math.floor(Math.random() * 6) + 1;
 
   if (currentPlayer === 1) {
-    randomizerP1.textContent = currentRoll;
-    randomizerP2.textContent = ' ';
-  } else {
-    randomizerP2.textContent = currentRoll;
-    randomizerP1.textContent = ' ';
-  }
+        drawDice1(currentRoll);
+    } else {
+        drawDice2(currentRoll);
+    }
 }
 
 randomizerP1.addEventListener('click', () => {
